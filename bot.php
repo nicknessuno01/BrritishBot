@@ -1,18 +1,19 @@
 <?php
 
 
-//code by @nicknessuno01
-//@cancr
+
+
+
 
 
 if($msg == "/start")
 {
-$getid = file_get_contents("DATA/british/british $userID");
-if($getid == "")
+$getid = file_get_contents("DATA/british/british $userID"); 
+if($getid == "") 
 {
-mkdir("DATA");
-mkdir("DATA/british");
-file_put_contents("DATA/british/british $userID", "british");
+mkdir("DATA"); 
+mkdir("DATA/british"); 
+file_put_contents("DATA/british/british $userID", "british"); 
 $zuccheroconpanna[] = array(
 array(
 "text" => "Canale British!",
@@ -28,9 +29,9 @@ array(
 );
 sm("-1001264887149", "$nome è un britishhhhh🇬🇧🇬🇧🇬🇧", $menu, 'Markdown', false, false, true);
 sm("-1001357944415", "$nome è un britishhhhh🇬🇧🇬🇧🇬🇧", $menu, 'Markdown', false, false, true);
-exit;
+exit; 
 }
-if($getid == "british")
+if($getid == "british") 
 {
 $menu[] = array(
 array(
@@ -40,3 +41,6 @@ array(
 sm($chatID, "Sei gia british 🇬🇧🇬🇧🇬🇧", $menu, 'Markdown', false, false, true);
 }
 }
+
+
+
